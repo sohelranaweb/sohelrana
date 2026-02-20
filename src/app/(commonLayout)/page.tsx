@@ -1,3 +1,5 @@
+import AboutMe from "@/components/modules/AboutMe.tsx/AboutMe";
+import Hero from "@/components/modules/Hero/Hero";
 import Head from "next/head";
 
 export default async function Home() {
@@ -13,28 +15,8 @@ export default async function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="min-h-screen">
-        {/* Hero Section */}
-        <section className="container mx-auto px-4 py-20 min-h-screen flex items-center justify-center">
-          <div className="text-center">
-            <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">
-              Welcome to My Portfolio
-            </h1>
-            <p className="text-xl text-gray-300 mb-8">
-              Full Stack Developer | TypeScript Enthusiast
-            </p>
-            <button className="bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 rounded-lg transition-colors">
-              View My Work
-            </button>
-          </div>
-        </section>
-
-        {/* About Section */}
-        <section className="container mx-auto px-4 py-20">
-          <h2 className="text-4xl font-bold text-white mb-8">About Me</h2>
-          <div className="bg-white/5 backdrop-blur-sm rounded-lg p-8 border border-white/10">
-            <p className="text-gray-300 text-lg">Your about content here...</p>
-          </div>
-        </section>
+        <Hero />
+        <AboutMe />
 
         {/* Projects Section */}
         <section className="container mx-auto px-4 py-20">

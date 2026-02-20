@@ -37,7 +37,7 @@ const MobileMenu = ({ navItems }: MobileMenuProps) => {
             ))}
             <div>
               <Link href="/login" className="text-lg font-medium">
-                <Button className="w-full">Download Resume</Button>
+                <Button className="w-full">Login</Button>
               </Link>
             </div>
           </nav>
