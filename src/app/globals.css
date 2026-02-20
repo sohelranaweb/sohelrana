@@ -110,6 +110,36 @@ body {
   }
 }
 
+/* border  */
+/* Slow spinning border animation - 6 seconds */
+@keyframes spin-border {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-border-slow {
+  animation: spin-border 10s linear infinite;
+}
+
+/* navItems  */
+@keyframes slideIn {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+.animate-slideIn {
+  animation: slideIn 0.3s ease-out;
+  transform-origin: left;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);

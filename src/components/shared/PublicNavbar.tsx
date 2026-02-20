@@ -1,18 +1,14 @@
 import Link from "next/link";
-import { HeartPulse } from "lucide-react";
-// import { ModeToggle } from "@/components/mode-toggle";
-// import { getCookie } from "@/services/auth/takenHandlers";
 import MobileMenu from "./MobileMenu";
-// import { getUserInfo } from "@/services/auth/getUserInfo";
-// import { getDefaultDashboardRoute } from "@/lib/auth-utils";
-// import NavbarAuthButtons from "./NavbarAuthButton";
+import NavLinks from "./NavLinks";
 const PublicNavbar = async () => {
   const navItems = [
-    { href: "/consultation", label: "Consultation" },
-    { href: "/health-plans", label: "Health Plans" },
-    { href: "/medicine", label: "Medicine" },
-    { href: "/diagnostics", label: "Diagnostics" },
-    { href: "/ngos", label: "NGOs" },
+    { href: "#horo", label: "Home" },
+    { href: "#about", label: "About" },
+    { href: "#skills", label: "Skills" },
+    { href: "#projects", label: "Projects" },
+    { href: "#blogs", label: "Blogs" },
+    { href: "#contact", label: "Contact" },
   ];
   // const accessToken = await getCookie("accessToken");
   // const userInfo = accessToken ? await getUserInfo() : null;
@@ -27,17 +23,8 @@ const PublicNavbar = async () => {
           <span className="text-xl font-bold text-primary">Sohel</span>
         </Link>
 
-        <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
-          {navItems.map((link) => (
-            <Link
-              key={link.label}
-              href={link.href}
-              className="text-foreground hover:text-primary transition-colors"
-            >
-              {link.label}
-            </Link>
-          ))}
-        </nav>
+        {/* Desktop Navigation */}
+        <NavLinks />
 
         <div className="hidden md:flex items-center space-x-2">
           {/* 

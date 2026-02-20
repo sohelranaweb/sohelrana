@@ -2,9 +2,12 @@ import { Button } from "@/components/ui/button";
 
 const Hero = () => {
   return (
-    <section className="container mx-auto px-4 py-20 flex items-center justify-center">
+    <section
+      className="container mx-auto px-4 py-20 flex items-center justify-center"
+      id="hero"
+    >
       <div className="text-center space-y-6">
-        <p className="text-2xl">Hey There, This is Sohel Rana</p>
+        <p className="text-xl md:text-2xl">Hey There, This is Sohel Rana</p>
         <h1 className="text-3xl md:text-5xl font-bold">
           Full Stack Web Developer | TypeScript Enthusiast
         </h1>
