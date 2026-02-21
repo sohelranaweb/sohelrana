@@ -18,7 +18,17 @@ const projects: Project[] = [
     description:
       "An AI-powered platform that connects patients with doctors using smart recommendation algorithms and real-time appointment booking.",
     image: "/projects/project.png",
-    tags: ["Next.js", "TypeScript", "TailwindCSS", "OpenAI"],
+    tags: [
+      "Next.js",
+      "TypeScript",
+      "React.js",
+      "Postgres",
+      "Node.js",
+      "Express.js",
+      "JWT",
+      "TailwindCSS",
+      "OpenRouterAI",
+    ],
     githubUrl: "https://github.com/yourhandle/project1",
     liveUrl: "https://project1.vercel.app",
     featured: true,
