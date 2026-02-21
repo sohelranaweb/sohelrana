@@ -41,32 +41,32 @@ const projects: Project[] = [
     githubUrl: "https://github.com/yourhandle/project3",
     liveUrl: "https://project3.vercel.app",
   },
-  {
-    title: "Portfolio Website",
-    description:
-      "A personal portfolio with starry animations, smooth scroll, and a clean modern design.",
-    image: "/projects/project4.png",
-    tags: ["Next.js", "Framer Motion", "TailwindCSS"],
-    githubUrl: "https://github.com/yourhandle/project4",
-  },
-  {
-    title: "Task Management App",
-    description:
-      "A drag-and-drop task manager with team collaboration, deadline tracking, and progress visualization.",
-    image: "/projects/project5.png",
-    tags: ["React", "TypeScript", "Zustand", "DnD Kit"],
-    githubUrl: "https://github.com/yourhandle/project5",
-    liveUrl: "https://project5.vercel.app",
-  },
-  {
-    title: "Weather Dashboard",
-    description:
-      "A beautiful weather app with 7-day forecasts, interactive maps, and location-based alerts.",
-    image: "/projects/project6.png",
-    tags: ["Next.js", "OpenWeather API", "Leaflet"],
-    githubUrl: "https://github.com/yourhandle/project6",
-    liveUrl: "https://project6.vercel.app",
-  },
+  // {
+  //   title: "Portfolio Website",
+  //   description:
+  //     "A personal portfolio with starry animations, smooth scroll, and a clean modern design.",
+  //   image: "/projects/project4.png",
+  //   tags: ["Next.js", "Framer Motion", "TailwindCSS"],
+  //   githubUrl: "https://github.com/yourhandle/project4",
+  // },
+  // {
+  //   title: "Task Management App",
+  //   description:
+  //     "A drag-and-drop task manager with team collaboration, deadline tracking, and progress visualization.",
+  //   image: "/projects/project5.png",
+  //   tags: ["React", "TypeScript", "Zustand", "DnD Kit"],
+  //   githubUrl: "https://github.com/yourhandle/project5",
+  //   liveUrl: "https://project5.vercel.app",
+  // },
+  // {
+  //   title: "Weather Dashboard",
+  //   description:
+  //     "A beautiful weather app with 7-day forecasts, interactive maps, and location-based alerts.",
+  //   image: "/projects/project6.png",
+  //   tags: ["Next.js", "OpenWeather API", "Leaflet"],
+  //   githubUrl: "https://github.com/yourhandle/project6",
+  //   liveUrl: "https://project6.vercel.app",
+  // },
 ];
 
 export default function Projects() {
