@@ -8,15 +8,16 @@ export interface Project {
   description: string;
   image: string;
   tags: string[];
-  githubUrl?: string;
+  githubFrontendUrl?: string;
+  githubBackendUrl?: string;
   liveUrl?: string;
   featured?: boolean;
 }
 const projects: Project[] = [
   {
-    title: "AI Healthcare Platform",
+    title: "AI SR-Healthcare Platform",
     description:
-      "An AI-powered platform that connects patients with doctors using smart recommendation algorithms and real-time appointment booking.",
+      "Developed AI-powered healthcare platform with Next.js achieving 92% doctor-matching accuracy, featuring multi-role dashboards, appointment scheduling, video consultations, secure payments, and HIPAA-compliant medical records across 20+ specialties",
     image: "/projects/project.PNG",
     tags: [
       "Next.js",
@@ -29,27 +30,42 @@ const projects: Project[] = [
       "TailwindCSS",
       "OpenRouterAI",
     ],
-    githubUrl: "https://github.com/yourhandle/project1",
-    liveUrl: "https://project1.vercel.app",
+    githubFrontendUrl:
+      "https://github.com/sohelranaweb/sr-health-care-frontend",
+    githubBackendUrl: "https://github.com/sohelranaweb/sr-health-care-backend",
+    liveUrl: "https://sr-health-care-frontend.vercel.app",
     featured: true,
   },
   {
-    title: "E-Commerce Dashboard",
+    title: "Travel Buddy",
     description:
-      "A full-stack e-commerce admin dashboard with real-time analytics, inventory management, and order tracking.",
+      "Developed social travel platform enabling users to find compatible travel partners through AI-powered matching based on destinations, interests, budget, and travel dates",
     image: "/projects/project2.PNG",
-    tags: ["React", "Node.js", "MongoDB", "Chart.js"],
-    githubUrl: "https://github.com/yourhandle/project2",
-    liveUrl: "https://project2.vercel.app",
+    tags: [
+      "Next.js",
+      "TypeScript",
+      "React.js",
+      "Postgres",
+      "Node.js",
+      "Express.js",
+      "JWT",
+      "TailwindCSS",
+    ],
+    githubFrontendUrl: "https://github.com/sohelranaweb/travel-buddy-client",
+    githubBackendUrl: "https://github.com/sohelranaweb/travel-buddy-server",
+    liveUrl: "https://travel-buddy-client-taupe.vercel.app",
   },
   {
-    title: "Real-time Chat App",
+    title: "Digital Wallet Management",
     description:
-      "A modern chat application with real-time messaging, file sharing, and group conversation support.",
+      "DigiCash Frontend is a modern, responsive web application designed to provide users with a seamless digital wallet experience, similar to Bkash, Nagad, or Rocket.",
     image: "/projects/project3.PNG",
     tags: ["Next.js", "Socket.io", "PostgreSQL", "Redis"],
-    githubUrl: "https://github.com/yourhandle/project3",
-    liveUrl: "https://project3.vercel.app",
+    githubFrontendUrl:
+      "https://github.com/sohelranaweb/digicash-management-system-fronted-",
+    githubBackendUrl:
+      "https://github.com/sohelranaweb/digicash-management-system-backend",
+    liveUrl: "https://digicash-client.vercel.app",
   },
   // {
   //   title: "Portfolio Website",
@@ -92,7 +108,7 @@ export default function Projects() {
           <span className="inline-block text-xs tracking-[0.4em] text-blue-400/60 uppercase font-mono mb-4">
             ✦ My Work ✦
           </span>
-          <h2 className="text-5xl md:text-6xl font-bold tracking-tight text-white mb-4">
+          <h2 className="text-4xl font-bold tracking-tight text-white mb-4">
             Featured{" "}
             <span className="relative inline-block">
               <span className="bg-linear-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
@@ -117,7 +133,7 @@ export default function Projects() {
         {/* Bottom CTA */}
         <div className="text-center mt-14">
           <a
-            href="https://github.com/yourhandle"
+            href="https://github.com/sohelranaweb"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-white/15 bg-white/5 backdrop-blur-sm text-gray-300 hover:text-white hover:border-white/30 hover:bg-white/10 text-sm font-medium transition-all duration-300 group"

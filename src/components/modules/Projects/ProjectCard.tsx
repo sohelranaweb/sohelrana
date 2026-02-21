@@ -60,27 +60,38 @@ export default function ProjectCard({ project }: { project: Project }) {
           </div>
 
           {/* Links */}
-          <div className="flex items-center gap-3 pt-1 border-t border-white/5">
-            {project.githubUrl && (
-              <a
-                href={project.githubUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-1.5 text-gray-400 hover:text-white text-xs transition-colors duration-300 group/link"
-              >
-                <Github className="w-4 h-4 group-hover/link:scale-110 transition-transform duration-300" />
-                <span>Source</span>
-              </a>
-            )}
+          <div className="flex items-center justify-between pt-1 border-t border-white/5">
             {project.liveUrl && (
               <a
                 href={project.liveUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-1.5 text-gray-400 hover:text-blue-400 text-xs transition-colors duration-300 group/link ml-auto"
+                className="flex items-center gap-1.5 text-gray-400 hover:text-blue-400 text-xs transition-colors duration-300 group/link"
               >
                 <span>Live Demo</span>
                 <ExternalLink className="w-4 h-4 group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 transition-transform duration-300" />
+              </a>
+            )}
+            {project.githubFrontendUrl && (
+              <a
+                href={project.githubFrontendUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-1.5 text-gray-400 hover:text-white text-xs transition-colors duration-300 group/link"
+              >
+                <Github className="w-4 h-4 group-hover/link:scale-110 transition-transform duration-300" />
+                <span>Frontend</span>
+              </a>
+            )}
+            {project.githubBackendUrl && (
+              <a
+                href={project.githubBackendUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-1.5 text-gray-400 hover:text-white text-xs transition-colors duration-300 group/link"
+              >
+                <Github className="w-4 h-4 group-hover/link:scale-110 transition-transform duration-300" />
+                <span>Backend</span>
               </a>
             )}
           </div>
